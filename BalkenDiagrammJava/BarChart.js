@@ -1,6 +1,4 @@
-﻿
-
-export class BarChart {
+﻿export class BarChart {
     _dataObject;
     _canvas;
     constructor(dataObject, canvas) {
@@ -16,8 +14,8 @@ export class BarChart {
         for (let data in this._dataObject) {
 
             this._canvas.fillStyle = color[i];
-            this._canvas.fillRect(0, y, this._dataObject[data] * 10, 20);
-            y += 20;
+            this._canvas.fillRect(0, y, this._dataObject[data] * 10, 30);
+            y += 30;
             i++;
         }
         y = 0;
@@ -26,8 +24,9 @@ export class BarChart {
 
 
             this._canvas.fillStyle = "white";
-            this._canvas.fillText(data, 0, y + 15, 250);
-            y += 20;
+            this._canvas.font = "15px Arial";
+            this._canvas.fillText(data, 10, y + 20, 250);
+            y += 30;
             i++;
         }
 
