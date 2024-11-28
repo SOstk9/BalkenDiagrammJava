@@ -24,7 +24,7 @@
 
 
             this._canvas.fillStyle = "white";
-            this._canvas.font = "20px Arial";
+            this._canvas.font = "20px Times New Roman";
             this._canvas.fillText(data, 10, y + 40, 250);
             y += 75;
             i++;
