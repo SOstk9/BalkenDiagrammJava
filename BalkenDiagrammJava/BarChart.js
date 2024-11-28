@@ -14,8 +14,8 @@
         for (let data in this._dataObject) {
 
             this._canvas.fillStyle = color[i];
-            this._canvas.fillRect(0, y, this._dataObject[data] * 10, 30);
-            y += 30;
+            this._canvas.fillRect(0, y, this._dataObject[data] * 10, 75);
+            y += 75;
             i++;
         }
         y = 0;
@@ -24,9 +24,9 @@
 
 
             this._canvas.fillStyle = "white";
-            this._canvas.font = "15px Arial";
-            this._canvas.fillText(data, 10, y + 20, 250);
-            y += 30;
+            this._canvas.font = "20px Arial";
+            this._canvas.fillText(data, 10, y + 40, 250);
+            y += 75;
             i++;
         }
 
